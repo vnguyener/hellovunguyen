@@ -15,9 +15,11 @@ class Header extends Component {
       'I code cool websites',
       'I like to fiddle with smart devices', 
       'I enjoy reading',
+      'I\'m obsessed with Medium articles',
       'Javascript is <3',
-      "I trail run",
-      "I am an adventurer"
+      'I trail run',
+      'I hike',
+      'I am an adventurer'
     ];
     this.titleIndex = 0;
 

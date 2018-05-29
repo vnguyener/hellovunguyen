@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
 
 class TypeWriter extends Component {
-  constructor() {
-    super();
-  }
-
   //TODO: take title and add typewriter effect
 
   render() {
