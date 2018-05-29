@@ -7,9 +7,10 @@ class Header extends Component {
   constructor() {
     super();
     this.state = {
-      title: 'Software Engineer'
+      title: ''
     };
     this.titles = [
+      'Software Engineer',
       'Protoss',
       'Full-Stack Developer',
       'I code cool websites',

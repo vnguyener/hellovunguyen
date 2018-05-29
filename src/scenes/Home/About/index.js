@@ -20,10 +20,10 @@ class About extends Component {
           <p>
             I believe being involved in all fields helps you stay curious and flexible.
             Though I have been deeply learning towards everything front-end.
-            <pre lang="js " className="code">
-              // I love it.
-            </pre>
           </p>
+          <pre lang="js " className="code">
+            // I love it.
+          </pre>
           <p>
             There's just something about creating responsive websites from scratch, being undecided on what tools to use in your stack, and spinning something up in seconds.
           </p>
