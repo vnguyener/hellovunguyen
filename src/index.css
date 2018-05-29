@@ -15,7 +15,7 @@ body, html {
   font-family: 'Karla', sans-serif;
 }
 
-.page h1.writing-heading a.name-heading {
+.page h1.writing-heading span.name-heading {
   color: #ccc;
   font-family: 'Karla', sans-serif;
 }
