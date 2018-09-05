@@ -1,0 +1,28 @@
+.skills {
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+}
+
+.skills table {
+    text-align: center;
+    display: inline;
+    margin: 0 auto;
+
+}
+
+.skill-category {
+    padding: 0px 10px;
+}
+
+.skills table tbody {
+    text-align: justify;
+}
+
+.skills table tbody ul {
+    margin-left: -25px;
+}
+
+ul {
+    list-style-type: none;
+}
