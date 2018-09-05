@@ -1,28 +1,42 @@
 import React, { Component } from 'react';
+import moment from 'moment'
 import './style.css';
 
 class About extends Component {
+  constructor() {
+    super();
+    this.me = {
+      job: {
+        position: 'Software Engineer',
+        location: 'Kickbox'
+      },
+      experience: {
+        years: moment().diff('2013-09-17', 'years')
+      }
+    };
+  }
+
   render() {
     return (
       <div>
         <div className="">
           <h2>
-            I'm a developer currently based out of Dallas, TX. I focus on front-end, back-end, and side-ways development.
+            I'm a developer currently based out of Dallas, TX. I focus on front-end, back-end, <s>side-ways</s>, .. development.
           </h2>
         </div>
         <div className="article-page">
           <p>
-            I've been in the software industry for over 5 years (maybe 10+ if you count that website I did in high school), and I'm now the Integrations Developer of Kickbox. 
+            I've been in the software industry for over {this.me.experience.years} years (maybe 10+ if you count that website I did in high school), and I'm now the {this.me.job.position} at {this.me.job.location}. 
           </p>
           <p>
             In my day to day, I work with complex web projects, building and making sure the front-end is human-readable, taking more server-side tasks in writing models, libraries, middleware, and store procedures, and making time to read up/fiddle with new libraries and practices.
           </p>
           <p>
-            I believe being involved in all fields helps you stay curious and flexible.
-            Though I have been deeply learning towards everything front-end.
+            I believe being involved in all aspects helps you stay curious and flexible.
+            Though I have been deeply leaning towards everything front-end.
           </p>
           <pre lang="js " className="code">
-            // I love it.
+            I love it.
           </pre>
           <p>
             There's just something about creating responsive websites from scratch, being undecided on what tools to use in your stack, and spinning something up in seconds.
