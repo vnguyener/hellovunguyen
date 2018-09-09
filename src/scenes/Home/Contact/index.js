@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import './style.css';
+
 class Contact extends Component {
   render() {
     return (
@@ -7,7 +9,7 @@ class Contact extends Component {
         <div class="contact-section-wrapper fade-slide-up-element-2">
           <p>
             You can reach me for an inquiry or just to say hi at <br/>
-            <a href="mailto:hey.vuuu@gmail.com">hey.vuuu.com</a>.
+            <a href="mailto:hey.vuuu@gmail.com">hey.vuuu@gmail.com</a>.
           </p>
           <p>
             For more about me, I'm also on <br />
