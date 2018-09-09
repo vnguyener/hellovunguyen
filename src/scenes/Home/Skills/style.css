@@ -17,6 +17,7 @@
 
 .skills table tbody {
     text-align: justify;
+    vertical-align: top;
 }
 
 .skills table tbody ul {

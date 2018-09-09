@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 
 import About from './About'
 import Header from './Header'
-import Projects from './Projects'
 import Skills from './Skills'
+import Contact from './Contact'
 
 import './style.css';
 
@@ -15,7 +15,7 @@ class App extends Component {
           <Header />
           <About />
           <Skills />
-          <Projects />
+          <Contact />
         </div>
       </div>
     );

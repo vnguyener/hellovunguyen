@@ -11,7 +11,7 @@ class Header extends Component {
     };
     this.titles = [
       'Software Engineer',
-      'I\' a mBlood Elf Marksman Hunter ;)',
+      'I\' a mBlood Elf Marksman Hunter',
       'Full-Stack Developer',
       'I code cool websites',
       'I like to fiddle with AI', 

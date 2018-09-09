@@ -21,7 +21,7 @@ class About extends Component {
       <div>
         <div className="">
           <h2>
-            I'm a developer currently based out of Dallas, TX. I focus on front-end, back-end, <s>side-ways</s>, .. development.
+            I'm a developer currently based out of Dallas, TX. I focus on front-end, back-end, <s>side-ways</s>, <s>intergalactic</s> .. development.
           </h2>
         </div>
         <div className="article-page">

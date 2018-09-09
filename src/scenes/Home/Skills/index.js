@@ -9,13 +9,6 @@ class Skills extends Component {
         <div className="article-page skills">
           <table>
             <thead>
-              <tr>
-                <td class="skill-category">Javascript Libraries</td>
-                <td class="skill-category">Task Automation</td>
-                <td class="skill-category">Testing</td>
-                <td class="skill-category">Package Managers</td>
-                <td class="skill-category">Other</td>
-              </tr>
             </thead>
             <tbody>
               <tr>
