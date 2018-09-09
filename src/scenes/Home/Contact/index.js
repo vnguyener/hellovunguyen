@@ -14,8 +14,8 @@ class Contact extends Component {
           <p>
             For more about me, I'm also on <br />
             <a href="" target="_blank">instagram</a> &amp; 
-            <a href="" target="_blank">facebook</a> &amp;
-            <a href="" target="_blank">linkedin</a>.
+            <a href="" target="_blank"> facebook</a> &amp; 
+            <a href="" target="_blank"> linkedin</a>.
           </p>
         </div>
       </section>
