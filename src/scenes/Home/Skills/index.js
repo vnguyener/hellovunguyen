@@ -14,13 +14,13 @@ class Skills extends Component {
               <tr>
                 <td>
                   <ul>
-                    <li>React</li>
-                    <li>Node</li>
+                    <li><mark class="highlight">React</mark></li>
+                    <li><mark class="highlight fade">Node</mark></li>
                     <li>Coffeescript</li>
-                    <li>Angular.js 1.x</li>
+                    <li><mark class="highlight">Angular.js 1.x</mark></li>
                     <li>Angular 2+</li>
                     <li>Knockout.js</li>
-                    <li>Angular Material</li>
+                    <li><mark class="highlight fade">Angular Material</mark></li>
                     <li>RequireJS</li>
                     <li>jQuery</li>
                     <li>jQuery UI</li>
@@ -31,8 +31,8 @@ class Skills extends Component {
                 </td>
                 <td>
                   <ul>
-                    <li>Webpack 4</li>
-                    <li>Gulp</li>
+                    <li><mark class="highlight fade">Webpack 4</mark></li>
+                    <li><mark class="highlight">Gulp</mark></li>
                     <li>Jenkins</li>
                     <li>ESLint</li>
                   </ul>
@@ -40,13 +40,13 @@ class Skills extends Component {
                 <td>
                   <ul>
                     <li>Jasmine</li>
-                    <li>Mocha</li>
+                    <li><mark class="highlight fade">Mocha</mark></li>
                     <li>Jest</li>
                   </ul>
                 </td>
                 <td>
                   <ul>
-                    <li>Yarn</li>
+                    <li><mark class="highlight">Yarn</mark></li>
                     <li>npm</li>
                     <li>Bower</li>
                     <li>Nuget</li>
@@ -54,7 +54,7 @@ class Skills extends Component {
                 </td>
                 <td>
                   <ul>
-                    <li>Sass</li>
+                    <li><mark class="highlight">Sass</mark></li>
                     <li>Less</li>
                     <li>CSS</li>
                   </ul>
