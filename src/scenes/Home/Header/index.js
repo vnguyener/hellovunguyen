@@ -11,18 +11,19 @@ class Header extends Component {
     };
     this.titles = [
       'Software Engineer',
-      'I\' a mBlood Elf Marksman Hunter',
+      'I\'m a Blood Elf Marksman Hunter',
       'Full-Stack Developer',
-      'I code cool websites',
-      'I like to fiddle with AI', 
-      'I enjoy reading',
-      'I\'m obsessed with Medium articles',
+      'I code cool websites.',
+      'I like to fiddle with AI.', 
+      'I enjoy reading.',
+      'I\'m obsessed with Medium articles.',
       'Javascript is <3',
-      'I trail run',
-      'I play tennis',
-      'I hike',
-      'I am an adventurer',
-      'I want to be Ron Swanson',
+      'I trail run.',
+      'I play tennis.',
+      'I hike.',
+      'I doodle.', 
+      'I am an adventurer.',
+      'I want to be Ron Swanson.',
     ];
     this.titleIndex = 0;
 

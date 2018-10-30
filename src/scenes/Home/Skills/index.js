@@ -31,8 +31,10 @@ class Skills extends Component {
                 </td>
                 <td>
                   <ul>
+                    <li>Webpack 4</li>
                     <li>Gulp</li>
                     <li>Jenkins</li>
+                    <li>ESLint</li>
                   </ul>
                 </td>
                 <td>
@@ -54,9 +56,13 @@ class Skills extends Component {
                   <ul>
                     <li>Sass</li>
                     <li>Less</li>
+                    <li>CSS</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul>
                     <li>C#</li>
                     <li>HTML 5</li>
-                    <li>Typings</li>
                   </ul>
                 </td>
               </tr>

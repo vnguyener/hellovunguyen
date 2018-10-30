@@ -1,6 +1,7 @@
 .skills {
     text-align: center;
     margin: 0 auto;
+    margin-left: -10%;
     display: flex;
 }
 
