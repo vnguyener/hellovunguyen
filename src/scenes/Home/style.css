@@ -26,3 +26,67 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+
+mark:before {
+  content: ' ';
+  display: block;
+  height: 90%;
+  width: 100%;
+  margin-left: -3px;
+  margin-right: -3px;
+  position: absolute;
+  z-index: -1;
+}
+
+mark:after {
+  content: ' ';
+  display: block;
+  height: 90%;
+  width: 100%;
+  margin-left: -3px;
+  margin-right: -3px;
+  position: absolute;
+  z-index: -1;
+}
+
+.highlight {
+  position: relative;
+  background-color: rgba(243, 243, 27, 0.84);
+  border-top-right-radius: 28%;
+  border-bottom-right-radius: 60%;
+  border-bottom-left-radius: 90%;
+  border-top-left-radius: 19%;
+}
+
+.highlight.fade {
+  background-color: rgba(251, 239, 98, 0.54);
+}
+
+.highlight.fade:before {
+  background-color: rgba(251, 239, 98, 0.54);
+  left: -15px
+}
+
+.highlight:before {
+  height: 1.25em;
+  top: 5px;
+  left: -1px;
+  background: rgba(232, 232, 63, 0.5);
+  border-top-right-radius: 30%;
+  border-bottom-right-radius: 17%;
+  border-bottom-left-radius: 24%;
+  border-top-left-radius: 16%;
+  transform: rotate(1deg);
+}
+
+.highlight:after {
+  height: .8em;
+  top: .3em;
+  right: -4px;
+  background: rgba(232, 232, 63, 0.8);
+  border-top-right-radius: 20%;
+  border-bottom-right-radius: 90%;
+  border-bottom-left-radius: 28%;
+  transform: rotate(-1deg);
+}
