@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 
 import About from './About'
 import Header from './Header'
+import Footer from './Footer'
 import Skills from './Skills'
-import Contact from './Contact'
 
 import './style.css';
 
@@ -16,7 +16,7 @@ class App extends Component {
           <About />
           <Skills />
         </div>
-        <Contact />
+        <Footer />
       </div>
     );
   }

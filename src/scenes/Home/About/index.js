@@ -29,7 +29,7 @@ class About extends Component {
             I've been in the software industry for over {this.me.experience.years} years (maybe 10+ if you count that website I did in high school), and I'm now the {this.me.job.position} at {this.me.job.location}. 
           </p>
           <p>
-            In my day to day, I build and make sure the front-end is human-readable, controllers and other back-end pieces secure and testable, while making time to read up/fiddle with new libraries and practices.
+            In my day to day, I build and make sure the front-end is human-readable, controllers and other back-end pieces secure and testable, while making sure to make time to read up/fiddle with new libraries and practices.
           </p>
           <p>
             I believe being involved in all aspects helps you stay curious and flexible.
