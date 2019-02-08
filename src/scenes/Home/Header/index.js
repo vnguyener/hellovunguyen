@@ -10,18 +10,19 @@ class Header extends Component {
       title: ''
     };
     this.titles = [
-      'Software Engineer',
-      'I\'m a Blood Elf Marksman Hunter',
-      'Full-Stack Developer',
+      'I\'m a Software Engineer.',
+      'I\'m a Blood Elf Hunter.',
+      'I\'m a Full-Stack Developer.',
       'I code cool websites.',
       'I like to fiddle with AI.', 
       'I enjoy reading.',
-      'I\'m obsessed with Medium articles.',
-      'Javascript is <3',
+      'I\'m busy reading Medium.',
+      'I think Javascript is <3.',
       'I trail run.',
       'I play tennis.',
       'I hike.',
-      'I doodle.', 
+      'I doodle.',
+      'I\'m browsing Reddit.',
       'I am an adventurer.',
       'I want to be Ron Swanson.',
     ];
@@ -31,7 +32,7 @@ class Header extends Component {
       this.changeTitle(this.titles[this.titleIndex]);
       this.titleIndex++;
       if (this.titleIndex >= this.titles.length) {
-        this.changeTitle('Software Engineer');
+        this.changeTitle('I\'m a Software Engineer');
         this.titleIndex = 0;
       }
     }, 1500)
@@ -45,7 +46,7 @@ class Header extends Component {
   render() {
     return (
       <h1 className="writing-heading">
-        <span className="name-heading">Vu Nguyen / </span>
+        <span className="name-heading">Hey I'm Vu Nguyen, and </span>
         <TypeWriter title={this.state.title}/>
       </h1>
     );

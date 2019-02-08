@@ -21,7 +21,7 @@ class About extends Component {
       <div>
         <div className="">
           <h2>
-            I'm a software engineer currently based out of Dallas, TX. I focus on front-end, back-end, <s>side-ways</s>, <s>intergalactic</s> .. development.
+            Currently based out of Dallas, TX. Focusing on front-end, back-end, <s>side-ways</s>, <s>intergalactic</s> .. development.
           </h2>
         </div>
         <div className="article-page">
@@ -29,20 +29,26 @@ class About extends Component {
             I've been in the software industry for over {this.me.experience.years} years (maybe 10+ if you count that website I did in high school), and I'm now the {this.me.job.position} at {this.me.job.location}. 
           </p>
           <p>
-            In my day to day, I build and make sure the front-end is human-readable, controllers and other back-end pieces secure and testable, while making sure to make time to read up/fiddle with new libraries and practices.
+            In my day to day, I'm leading front-end development and builds to make sure things are <mark class="highlight fade">human-readable</mark>. 
+            I'm also dipping into back-end pieces like in design/process discussions, APIs, middleware, etc to help make things testable and secure
+          </p>
+          <pre lang="js" className="code">
+            The testable part took a lot of patience
+          </pre>
+          <p>All the while fiddling and reading up things on Medium (or Reddit).
           </p>
           <p>
-            I believe being involved in all aspects helps you stay curious and flexible.
-            Though I have been deeply leaning towards everything front-end.
+            I believe being involved in all of software development helps you stay curious and flexible.
+            Though I may be biasedly leaning towards front-end.
           </p>
-          <pre lang="js " className="code">
+          <pre lang="js" className="code">
             I just love it.
           </pre>
           <p>
             There's just something about creating responsive websites from scratch, being undecided on what tools to use in your stack, and spinning something up in seconds.
           </p>
           <p>
-            When I take off my developer hat, I'm usually out running around (literally) or trying to be an Overwatch pro.
+            At the end of the day when I take off my developer hat, you'll find me out running, teaching tennis, <mark class="highlight"> or trying to be an Overwatch pro</mark>.
           </p>
         </div>
       </div>
