@@ -15,7 +15,8 @@ class Skills extends Component {
                 <td>
                   <ul>
                     <li><mark class="highlight">React</mark></li>
-                    <li><mark class="highlight fade">Node</mark></li>
+                    <li><mark class="highlight">Redux</mark></li>
+                    <li><mark class="highlight fade">Node.js</mark></li>
                     <li>Coffeescript</li>
                     <li><mark class="highlight">Angular.js 1.x</mark></li>
                     <li>Angular 2+</li>
@@ -35,13 +36,16 @@ class Skills extends Component {
                     <li><mark class="highlight">Gulp</mark></li>
                     <li>Jenkins</li>
                     <li>ESLint</li>
+                    <li>Flow</li>
                   </ul>
                 </td>
                 <td>
                   <ul>
+                    <li><mark class="highlight">Jest</mark></li>
                     <li>Jasmine</li>
-                    <li><mark class="highlight fade">Mocha</mark></li>
-                    <li>Jest</li>
+                    <li>Mocha</li>
+                    <li>Enzyme</li>
+                    <li>Unit Testing, Integration Testing, Mocking, etc.</li>
                   </ul>
                 </td>
                 <td>
@@ -56,6 +60,7 @@ class Skills extends Component {
                   <ul>
                     <li><mark class="highlight">Sass</mark></li>
                     <li>Less</li>
+                    <li>Stylus</li>
                     <li>CSS</li>
                   </ul>
                 </td>
