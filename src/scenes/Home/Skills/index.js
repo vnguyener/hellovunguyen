@@ -32,8 +32,8 @@ class Skills extends Component {
                 </td>
                 <td>
                   <ul>
-                    <li><mark class="highlight fade">Webpack 4</mark></li>
-                    <li><mark class="highlight">Gulp</mark></li>
+                    <li><mark class="highlight">Webpack 4</mark></li>
+                    <li><mark class="highlight fade">Gulp</mark></li>
                     <li>Jenkins</li>
                     <li>ESLint</li>
                     <li>Flow</li>
@@ -41,11 +41,10 @@ class Skills extends Component {
                 </td>
                 <td>
                   <ul>
-                    <li><mark class="highlight">Jest</mark></li>
                     <li>Jasmine</li>
+                    <li><mark class="highlight fade">Jest</mark></li>
                     <li>Mocha</li>
                     <li>Enzyme</li>
-                    <li>Unit Testing, Integration Testing, Mocking, etc.</li>
                   </ul>
                 </td>
                 <td>
@@ -68,6 +67,16 @@ class Skills extends Component {
                   <ul>
                     <li>C#</li>
                     <li>HTML 5</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul>
+                    <li><mark class="highlight">Microsoft SQL</mark></li>
+                    <li>MySql</li>
+                    <li>MongoDB</li>
+                    <li>Sequelize</li>
+                    <li>Dapper</li>
+                    <li>Snowflake</li>
                   </ul>
                 </td>
               </tr>
