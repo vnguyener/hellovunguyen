@@ -1,56 +1,69 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './style.css';
 
-import TypeWriter from  '../../../components/Typewriter'
+import TypeWriter from  '../../../components/Typewriter';
 
-class Header extends Component {
-  constructor() {
-    super();
-    this.state = {
-      title: ''
-    };
-    this.titles = [
-      'I\'m a Software Engineer.',
-      'I\'m a Blood Elf Hunter.',
-      'I\'m a Full-Stack Developer.',
-      'I code cool websites.',
-      'I like to fiddle with AI.', 
-      'I enjoy reading.',
-      'I\'m busy reading Medium.',
-      'I think Javascript is <3.',
-      'I trail run.',
-      'I play tennis.',
-      'I hike.',
-      'I doodle.',
-      'I\'m browsing Reddit.',
-      'I am an adventurer.',
-      'I want to be Ron Swanson.',
-    ];
-    this.titleIndex = 0;
+function useInterval(callback, delay) {
+  const savedCallback = useRef();
 
-    setInterval(() => {
-      this.changeTitle(this.titles[this.titleIndex]);
-      this.titleIndex++;
-      if (this.titleIndex >= this.titles.length) {
-        this.changeTitle('I\'m a Software Engineer');
-        this.titleIndex = 0;
-      }
-    }, 1500)
+  // Remember the latest callback.
+  useEffect(() => {
+    savedCallback.current = callback;
+  }, [callback]);
 
-  }
-
-  changeTitle(title) {
-    this.setState({ title })
-  }
-  
-  render() {
-    return (
-      <h1 className="writing-heading">
-        <span className="name-heading">Hey I'm Vu Nguyen, and </span>
-        <TypeWriter title={this.state.title}/>
-      </h1>
-    );
-  }
+  // Set up the interval.
+  useEffect(() => {
+    function tick() {
+      savedCallback.current();
+    }
+    if (delay !== null) {
+      let id = setInterval(tick, delay);
+      return () => clearInterval(id);
+    }
+  }, [delay]);
 }
+
+const Header = () => {
+  const titles = [
+    'I\'m closing my stackoverflow tabs.',
+    'I\'m probably busy playing Animal Crossing.',
+    'I code cool websites.',
+    'I\'m lurking on dribbble.',
+    'I enjoy reading.',
+    'I\'m busy reading Medium.',
+    'Javascript is <3.',
+    'I trail run.',
+    'I play tennis.',
+    'I hike.',
+    'I like to doodle.',
+    'I\'m browsing Reddit.',
+    'I\'m pouring coffee (that I\'ll forget to drink)',
+  ];
+
+  const [title, setTitle] = useState('');
+  let [index, setIndex] = useState(0);
+
+  useInterval(() => {
+      changeTitle(titles[index]);
+      setIndex(index++);
+
+      console.log('index', index)
+      if (index >= titles.length) {
+        changeTitle('I\'m a Software Engineer');
+        setIndex(0);
+      }
+  }, 750);
+
+  const changeTitle = (title) => {
+    setTitle(title);
+  };
+  
+  return (
+    <h1 className="writing-heading">
+      <p className="name-heading">Hello, my name is Vu Nguyen</p>
+      <TypeWriter title={`and ${title}`} />
+    </h1>
+  );
+};
 
 export default Header;

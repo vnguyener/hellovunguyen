@@ -44,12 +44,14 @@ body, html {
 .page h1.writing-heading {
   font-size: 26px;
   margin-bottom: 30px;
-  font-family: 'Karla', sans-serif;
+  /* font-family: 'Karla', sans-serif; */
+  height: 75px;
 }
 
-.page h1.writing-heading span.name-heading {
+.page h1.writing-heading .name-heading {
   color: #ccc;
-  font-family: 'Karla', sans-serif;
+  /* font-family: 'Karla', sans-serif; */
+  margin: 0px;
 }
 
 .root-container {
