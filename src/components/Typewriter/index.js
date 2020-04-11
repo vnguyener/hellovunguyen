@@ -1,13 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
+import './style.css';
 
-class TypeWriter extends Component {
-  render() {
-    return (
-      <span>
-        {this.props.title}
-      </span>
-    );
-  }
-}
+const TypeWriter = ({ title }) => {
+  return (
+    <span className="typewriter">
+      {title}
+    </span>
+  );
+};
 
 export default TypeWriter;

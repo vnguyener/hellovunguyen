@@ -90,3 +90,16 @@ mark:after {
   border-bottom-left-radius: 28%;
   transform: rotate(-1deg);
 }
+
+.strikeout {
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    transparent 40%,
+    red 40%,
+    red 60%,
+    transparent 60%,
+    transparent);
+  margin: 13px 0;
+  padding: 0 0.5em;
+}
