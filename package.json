@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "flow-typed": "^3.1.0",
     "moment": "2.24.0",
+    "prop-types": "^15.7.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-scripts": "3.4.1"
@@ -13,7 +15,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "deploy": "aws s3 sync build/ s3://hellovunguyen.com"
+    "babel": "babel src/ -d lib/",
+    "aws:deploy": "aws s3 sync build/ s3://hellovunguyen.com",
+    "aws:delete": "aws s3 sync build/ s3://hellovunguyen.com --delete"
   },
   "browserslist": {
     "production": [
@@ -26,5 +30,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-flow": "^7.9.0",
+    "flow-bin": "^0.122.0"
   }
 }

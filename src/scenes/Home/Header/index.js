@@ -1,3 +1,5 @@
+
+// @flow
 import React, { useState, useEffect, useRef } from 'react';
 import './style.css';
 
@@ -8,13 +10,13 @@ function useInterval(callback, delay) {
 
   // Remember the latest callback.
   useEffect(() => {
-    savedCallback.current = callback;
+    if (savedCallback) savedCallback.current = callback;
   }, [callback]);
 
   // Set up the interval.
   useEffect(() => {
     function tick() {
-      savedCallback.current();
+      if (savedCallback && savedCallback.current) savedCallback.current();
     }
     if (delay !== null) {
       let id = setInterval(tick, delay);

@@ -103,3 +103,26 @@ mark:after {
   margin: 13px 0;
   padding: 0 0.5em;
 }
+
+.strikeout:before {
+  height: 1.25em;
+  top: 5px;
+  left: -1px;
+  background: rgba(232, 232, 63, 0.5);
+  border-top-right-radius: 30%;
+  border-bottom-right-radius: 17%;
+  border-bottom-left-radius: 24%;
+  border-top-left-radius: 16%;
+  transform: rotate(1deg);
+}
+
+.strikeout:after {
+  height: .8em;
+  top: .3em;
+  right: -4px;
+  background: rgba(232, 232, 63, 0.8);
+  border-top-right-radius: 20%;
+  border-bottom-right-radius: 90%;
+  border-bottom-left-radius: 28%;
+  transform: rotate(-1deg);
+}

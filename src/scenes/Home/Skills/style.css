@@ -3,25 +3,14 @@
     margin: 0 auto;
     margin-left: -10%;
     display: flex;
-}
-
-.skills table {
-    text-align: center;
-    display: inline;
-    margin: 0 auto;
-    padding: 0px 50px;
+    flex-wrap: wrap;
 }
 
 .skill-category {
     padding: 0px 10px;
 }
 
-.skills table tbody {
-    text-align: justify;
-    vertical-align: top;
-}
-
-.skills table tbody ul {
+.skills ul {
     margin-left: -25px;
 }
 
