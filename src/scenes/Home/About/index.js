@@ -18,8 +18,8 @@ const About = () => {
           Through {experience}+ years (maybe more if you count that website I did in high school) of working as a a software engineer, I've  
           been able to build a strong foundation of <mark className="highlight">UI/UX design, engineering best practices, and &nbsp;
           <a target="_blank" rel="noopener noreferrer" href="https://read.humanjavascript.com/ch01-introduction.html">writing code for humans</a></mark>.
-          Now, I assume the lead of front-end engineering and UI/UX design for our software engineering team where I love to share <span className="strikeout">memes</span> ideas, build out new features, refine best practices, and
-          most importantly <span className="strikeout">more memes</span> mentor. 
+          Now, I assume the lead of front-end engineering and UI/UX design for our software engineering team where I love to share <span className="strikeout">memes</span> ideas, flesh out new features, and
+          most importantly <span className="strikeout">sharing memes</span> mentor. 
         </p>
         <pre lang="js" className="code">
           I definitely have more of an emphasis for front-end... everything.

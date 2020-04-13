@@ -6,11 +6,14 @@ import Header from './Header'
 import Footer from './Footer'
 import Skills from './Skills'
 
+import LightSwitch from '../../components/LightSwitch';
+
 import './style.css';
 
 const App = () => {
   return (
     <div className="page">
+      <LightSwitch />
       <div className="root-container">
         <Header />
         <About />
