@@ -8,7 +8,7 @@ import Skills from './Skills'
 
 import LightSwitch from '../../components/LightSwitch';
 
-import './style.css';
+import './style.scss';
 
 const App = () => {
   return (

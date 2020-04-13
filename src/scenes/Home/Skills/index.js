@@ -1,6 +1,6 @@
 // @flow
 import React from 'react';
-import './style.css';
+import './style.scss';
 
 const Skills = () => {
   return (

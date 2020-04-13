@@ -2,7 +2,7 @@
 // @flow
 import React, { useState } from 'react';
 import moment from 'moment'
-import './style.css';
+import './style.scss';
 
 const About = () => { 
   const [position] = useState('Senior Software Engineer');
