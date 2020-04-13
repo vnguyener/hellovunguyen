@@ -49,7 +49,6 @@ const Header = () => {
       changeTitle(titles[index]);
       setIndex(index++);
 
-      console.log('index', index)
       if (index >= titles.length) {
         changeTitle('I\'m a Software Engineer');
         setIndex(0);
