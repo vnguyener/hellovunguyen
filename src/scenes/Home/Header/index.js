@@ -1,6 +1,7 @@
 
 // @flow
 import React, { useState, useEffect, useRef } from 'react';
+import Typography from "@material-ui/core/Typography";
 import './style.scss';
 
 import TypeWriter from  '../../../components/Typewriter';
@@ -60,10 +61,10 @@ const Header = () => {
   };
   
   return (
-    <h1 className="writing-heading">
-      <p className="name-heading">Hello, my name is Vu Nguyen</p>
+    <div className="writing-heading">
+      <Typography variant="h5" className="name-heading">Hello, my name is Vu Nguyen</Typography>
       <TypeWriter title={`and ${title}`} />
-    </h1>
+    </div>
   );
 };
 

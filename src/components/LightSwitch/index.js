@@ -1,33 +1,44 @@
 import React from "react";
 import Switch from "@material-ui/core/Switch";
-import { Helmet } from "react-helmet";
+import { withStyles } from '@material-ui/core/styles';
+import { blueGrey } from '@material-ui/core/colors';
 
 import useLocalStorageState from "../../hooks/useLocalStorageState";
 
 import "./style.scss";
 
-const LightSwitch = () => {
+const StyledSwitch = withStyles({
+  switchBase: {
+    color: blueGrey[100],
+    '&$checked': {
+      color: blueGrey[500],
+    },
+    '&$checked + $track': {
+      backgroundColor: blueGrey[500],
+    },
+  },
+  checked: {},
+  track: {},
+})(Switch);
+
+const LightSwitch = ({ onSwitch }) => {
   const [isLightOff, setIsLightOff] = useLocalStorageState("theme", false);
 
   const handleLightSwitch = (event) => {
     setIsLightOff(event.target.checked);
+    onSwitch(event.target.checked);
   };
-
-  console.log('is light off?', isLightOff)
 
   return (
     <>
-      <Helmet>
-        <body data-theme={isLightOff ? "dark" : "light"} />
-      </Helmet>
       <div className="lightswitch-container">
-        <Switch
+        <StyledSwitch
           checkedIcon={<span className="MuiSwitch-thumb"><i className="material-icons" style={{
             color: "#FFF",
             fontSize: "12px",
             position: "relative",
-            top: "-10px",
-          }}>brightness_2</i></span>}
+            top: "-12px",
+          }}>brightness_3</i></span>}
           checked={isLightOff}
           onChange={handleLightSwitch}
           color="primary"

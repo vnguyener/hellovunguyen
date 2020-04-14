@@ -53,13 +53,13 @@ body {
   padding: 5pc 0;
 }
 
-.page h1.writing-heading {
+.page .writing-heading {
   font-size: 26px;
 }
 
-.page h1.writing-heading .name-heading {
-  color: #000;
+.page .writing-heading .name-heading {
   margin: 0px;
+  font-weight: 600;
 }
 
 .root-container {
@@ -92,9 +92,9 @@ a {
 }
 
 a:hover {
-  color: #000;
+  color: inherit;
 }
 
 a:visited {
-  color: #000;
+  color: inherit;
 }
