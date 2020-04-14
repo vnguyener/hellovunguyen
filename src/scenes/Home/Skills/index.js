@@ -13,14 +13,15 @@ const Skills = () => {
       <h2>What I Work With</h2>
       <div className="article-page skills">
         <ul>
-          <li><mark className={highlightClass}>React</mark></li>
+          <li><mark className={highlightClass}>React (w/ hooks)</mark></li>
           <li><mark className={highlightClass}>Redux</mark></li>
           <li><mark className={`${highlightClass} fase`}>Material UI</mark></li>
           <li><mark className={`${highlightClass} fade`}>Node.js</mark></li>
           <li><mark className={highlightClass}>Angular.js 1.x</mark></li>
           <li>Angular 2+</li>
           <li><mark className={`${highlightClass} fade`}>Angular Material</mark></li>
-          <li>Express.js</li>
+          <li><mark className={`${highlightClass} fade`}>Express.js</mark></li>
+          <li>Vue.js</li>
           <li>Coffeescript</li>
           <li>Knockout.js</li>
           <li>RequireJS</li>
@@ -35,6 +36,12 @@ const Skills = () => {
           <li>Jenkins</li>
           <li>ESLint</li>
           <li>Flow</li>
+          <li>Typescript</li>
+          <li>&nbsp;</li>
+          <li><mark className={highlightClass}>Microsoft SQL</mark></li>
+          <li>MySql</li>
+          <li>MongoDB</li>
+          <li>Sequelize</li>
         </ul>
         <ul>
           <li>Jasmine</li>
@@ -42,14 +49,15 @@ const Skills = () => {
           <li>Mocha</li>
           <li>Chai</li>
           <li>Enzyme</li>
-          <li>Puppeteer</li>
-        </ul>
-
-        <ul>
+          <li>&nbsp;</li>
           <li><mark className={highlightClass}>Yarn</mark></li>
           <li>npm</li>
           <li>Bower</li>
           <li>Nuget</li>
+        </ul>
+
+        <ul>
+
         </ul>
         <ul>
           <li>C#</li>
@@ -58,12 +66,6 @@ const Skills = () => {
           <li>Less</li>
           <li>Stylus</li>
           <li>CSS</li>
-        </ul>
-        <ul>
-          <li><mark className={highlightClass}>Microsoft SQL</mark></li>
-          <li>MySql</li>
-          <li>MongoDB</li>
-          <li>Sequelize</li>
         </ul>
       </div>
     </div>
