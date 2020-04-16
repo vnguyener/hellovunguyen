@@ -1744,6 +1744,12 @@
     semver "^6.3.0"
     tsutils "^3.17.1"
 
+"@v/uselocalStorageState@https://github.com/vnguyener/useLocalStorageState.git":
+  version "1.0.0"
+  resolved "https://github.com/vnguyener/useLocalStorageState.git#397f972f324bb9f8b7d5876c250e11e110674493"
+  dependencies:
+    react "^16.13.1"
+
 "@webassemblyjs/ast@1.8.5":
   version "1.8.5"
   resolved "https://registry.yarnpkg.com/@webassemblyjs/ast/-/ast-1.8.5.tgz#51b1c5fe6576a34953bf4b253df9f0d490d9e359"
@@ -9377,7 +9383,7 @@ react-transition-group@^4.3.0:
     loose-envify "^1.4.0"
     prop-types "^15.6.2"
 
-react@16.13.1:
+react@16.13.1, react@^16.13.1:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react/-/react-16.13.1.tgz#2e818822f1a9743122c063d6410d85c1e3afe48e"
   integrity sha512-YMZQQq32xHLX0bz5Mnibv1/LHb3Sqzngu7xstSM+vrkE5Kzr9xE0yMByK5kMoTK30YVJE61WfbxIFFvfeDKT1w==
@@ -9699,6 +9705,13 @@ requires-port@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/requires-port/-/requires-port-1.0.0.tgz#925d2601d39ac485e091cf0da5c6e694dc3dcaff"
   integrity sha1-kl0mAdOaxIXgkc8NpcbmlNw9yv8=
+
+"resizables@https://github.com/vnguyener/resizables.git":
+  version "1.0.0"
+  resolved "https://github.com/vnguyener/resizables.git#8116266bbc24b560429c68b72446218052592b4c"
+  dependencies:
+    prop-types "^15.7.2"
+    react "^16.13.1"
 
 resolve-cwd@^2.0.0:
   version "2.0.0"

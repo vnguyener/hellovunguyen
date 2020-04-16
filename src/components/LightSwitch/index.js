@@ -3,7 +3,7 @@ import Switch from "@material-ui/core/Switch";
 import { withStyles } from '@material-ui/core/styles';
 import { blueGrey } from '@material-ui/core/colors';
 
-import useLocalStorageState from "../../hooks/useLocalStorageState";
+import useLocalStorageState from "@v/uselocalStorageState";
 
 import "./style.scss";
 

@@ -9,7 +9,7 @@
     "babel": "babel src/ -d lib/",
     "aws:deploy": "aws s3 sync build/ s3://hellovunguyen.com",
     "aws:delete": "aws s3 sync build/ s3://hellovunguyen.com --delete",
-    "aws:clear": "aws cloudfront create-invalidation --distribution-id= --paths /*"
+    "aws:clear": "aws cloudfront create-invalidation --distribution-id=E22ISNR3Q0E4MP --paths /*"
   },
   "browserslist": {
     "production": [
@@ -27,11 +27,13 @@
     "@material-ui/core": "^4.9.10",
     "@material-ui/icons": "^4.9.1",
     "@rehooks/local-storage": "^2.3.0",
+    "@v/uselocalStorageState": "https://github.com/vnguyener/useLocalStorageState.git",
     "prop-types": "^15.7.2",
     "react": "16.13.1",
     "react-app-polyfill": "^1.0.6",
     "react-dev-utils": "^10.2.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "resizables": "https://github.com/vnguyener/resizables.git"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
