@@ -24,7 +24,7 @@ const lightTheme = createMuiTheme({
   }
 });
 
-const App = () => {
+const Home = () => {
   const [isLightOff, setIsLightOff] = useState(localStorage.getItem("theme") ? JSON.parse(localStorage.getItem("theme") || '{}') : false);
 
   const getTheme = (res) => {
@@ -62,4 +62,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Home;
