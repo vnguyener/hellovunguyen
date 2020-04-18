@@ -40,7 +40,7 @@ const App = () => {
 
     window.addEventListener("storage", listener);
     return () => {
-      window.removeEventListener("storage, listener");
+      window.removeEventListener("storage", listener);
     };
   }, []);
 
