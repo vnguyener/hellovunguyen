@@ -6,15 +6,15 @@ import './style.scss';
 
 const Footer = () => {
   const theme = useTheme();
-
+  const themeType = theme.palette.type;
   return (
     <div className="md-padding find-me layout-row layout-align-center-center">
-      <div className={`${theme} md-padding layout-column icon-link`}>
-        <i className="fab fa-github-alt"></i>
+      <div className={`layout-column icon-link`}>
+        <div className={`icon-link-logo github ${themeType === "dark" ? "light" : "dark" }`}></div>
         <a  target="_blank" rel="noopener noreferrer" href="https://github.com/vnguyener">github.com/vnguyener</a>
       </div>
-      <div className={`${theme} md-padding layout-column icon-link`}>
-        <i className="fab fa-linkedin-in"></i>
+      <div className={`layout-column icon-link`}>
+        <div className={`icon-link-logo linkedin ${themeType === "dark" ? "light" : "dark" }`}></div>
         <a  target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/vungynr">linkedin.com/in/vungynr</a>
       </div>
     </div>

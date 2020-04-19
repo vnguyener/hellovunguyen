@@ -1,14 +1,14 @@
 
 // @flow
-import React, { useEffect } from "react";
-import ReactDOM from "react-dom";
+import React from "react";
+// import ReactDOM from "react-dom";
 import { CssBaseline } from "@material-ui/core";
 
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  useLocation,
+  // useLocation,
 } from "react-router-dom";
 
 // routes
@@ -16,12 +16,12 @@ import HomePage from "./Home";
 import WorkPage from "./Work";
 import BlogPage from "./Blog";
 
-function usePageViews() {
-  let location = useLocation();
-  useEffect(() => {
-    // ga.send(["pageview", location.pathname]);
-  });
-};
+// function usePageViews() {
+//   let location = useLocation();
+//   useEffect(() => {
+//     // ga.send(["pageview", location.pathname]);
+//   });
+// };
 
 const App = () => {
   return (

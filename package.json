@@ -7,8 +7,7 @@
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
     "babel": "babel src/ -d lib/",
-    "aws:deploy": "aws s3 sync build/ s3://hellovunguyen.com",
-    "aws:delete": "aws s3 sync build/ s3://hellovunguyen.com --delete",
+    "aws:deploy": "aws s3 sync build/ s3://hellovunguyen.com --delete",
     "aws:clear": "aws cloudfront create-invalidation --distribution-id=E22ISNR3Q0E4MP --paths /*"
   },
   "browserslist": {
