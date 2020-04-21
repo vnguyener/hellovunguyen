@@ -1,14 +1,15 @@
 
 // @flow
-import React from "react";
+import React, { useEffect, useState } from "react";
 // import ReactDOM from "react-dom";
-import { CssBaseline } from "@material-ui/core";
+import { CssBaseline, createMuiTheme } from "@material-ui/core";
+import { ThemeProvider } from "@material-ui/styles";
 
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  // useLocation,
+  //useLocation,
 } from "react-router-dom";
 
 // routes
@@ -16,30 +17,68 @@ import HomePage from "./Home";
 import WorkPage from "./Work";
 import BlogPage from "./Blog";
 
+// shared
+import LightSwitch from '../components/LightSwitch';
+import Footer from "./Shared/Footer";
+
 // function usePageViews() {
 //   let location = useLocation();
 //   useEffect(() => {
 //     // ga.send(["pageview", location.pathname]);
 //   });
 // };
+const darkTheme = createMuiTheme({
+  palette: {
+    type: "dark",
+  },
+});
+
+const lightTheme = createMuiTheme({
+  palette: {
+    type: "light"
+  }
+});
 
 const App = () => {
+  const [isLightOff, setIsLightOff] = useState(localStorage.getItem("theme") ? JSON.parse(localStorage.getItem("theme") || '{}') : false);
+
+  const getTheme = (res) => {
+    setIsLightOff(res);
+  };
+
+  useEffect(() => {
+    const listener = (e) => {
+      if (e.storageArea === localStorage && e.key === "theme") {
+        setIsLightOff(JSON.parse(e.newValue));
+      }
+    };
+
+    window.addEventListener("storage", listener);
+    return () => {
+      window.removeEventListener("storage", listener);
+    };
+  }, []);
+
   return (
     <>
-      <CssBaseline />
-      <Router>
-        <Switch>
-          <Route exact path="/">
-            <HomePage />
-          </Route>
-          <Route path="/work/:things?">
-            <WorkPage />
-          </Route>
-          <Route path="/blog/:articles?">
-            <BlogPage />
-          </Route>
-        </Switch>
-      </Router>
+      <ThemeProvider theme={isLightOff ? darkTheme : lightTheme}>
+        <CssBaseline />
+        <LightSwitch onSwitch={getTheme}/>
+        <Router>
+          <Switch>
+            <Route exact path="/">
+              <HomePage />
+            </Route>
+            <Route path="/work/:things?">
+              <WorkPage />
+            </Route>
+            <Route path="/blog/:articles?">
+              <BlogPage />
+            </Route>
+          </Switch>
+        </Router>
+        <Footer />
+      </ThemeProvider>
     </>
   );
 };
