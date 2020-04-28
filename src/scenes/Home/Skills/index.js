@@ -15,11 +15,11 @@ const Skills = () => {
         <ul>
           <li><mark className={highlightClass}>React (w/ hooks)</mark></li>
           <li><mark className={highlightClass}>Redux</mark></li>
-          <li><mark className={`${highlightClass} fase`}>Material UI</mark></li>
+          <li><mark className={`${highlightClass} fade`}>Material UI</mark></li>
           <li><mark className={`${highlightClass} fade`}>Node.js</mark></li>
-          <li><mark className={highlightClass}>Angular.js 1.x</mark></li>
+          <li>Angular.js 1.x</li>
           <li>Angular 2+</li>
-          <li><mark className={`${highlightClass} fade`}>Angular Material</mark></li>
+          <li>Angular Material</li>
           <li><mark className={`${highlightClass} fade`}>Express.js</mark></li>
           <li>Vue.js</li>
           <li>Coffeescript</li>
@@ -32,14 +32,14 @@ const Skills = () => {
         </ul>
         <ul>
           <li><mark className={highlightClass}>Webpack</mark></li>
-          <li><mark className={`${highlightClass} fade`}>Gulp</mark></li>
+          <li>Gulp</li>
           <li>Jenkins</li>
-          <li>ESLint</li>
-          <li>Flow</li>
+          <li><mark className={`${highlightClass} fade`}>ESLint</mark></li>
+          <li><mark className={`${highlightClass}`}>Flow</mark></li>
           <li>Typescript</li>
           <li>&nbsp;</li>
-          <li><mark className={highlightClass}>Microsoft SQL</mark></li>
-          <li>MySql</li>
+          <li>Microsoft SQL</li>
+          <li><mark className={`${highlightClass}`}>MySQ</mark>L</li>
           <li>MongoDB</li>
           <li>Sequelize</li>
         </ul>
@@ -49,18 +49,16 @@ const Skills = () => {
           <li>Mocha</li>
           <li>Chai</li>
           <li>Enzyme</li>
+          <li>Puppeteer</li>
           <li>&nbsp;</li>
           <li><mark className={highlightClass}>Yarn</mark></li>
           <li>npm</li>
           <li>Bower</li>
           <li>Nuget</li>
         </ul>
-
-        <ul>
-
-        </ul>
         <ul>
           <li>C#</li>
+          <li>Python</li>
           <li>HTML 5</li>
           <li><mark className={highlightClass}>Sass</mark></li>
           <li>Less</li>
