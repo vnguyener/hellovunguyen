@@ -3,7 +3,7 @@ import React from 'react';
 import { useTheme } from "@material-ui/core";
 import './style.scss';
 
-const Footer = () => {
+const SharedFooter = () => {
   const theme = useTheme();
   console.log('theme', theme)
   const themeType = theme.palette.type;
@@ -21,4 +21,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default SharedFooter;

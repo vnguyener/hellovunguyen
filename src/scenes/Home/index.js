@@ -3,8 +3,9 @@ import React from 'react';
 import { useTheme } from "@material-ui/core";
 
 import About from './About'
-import Header from './Header'
+import Title from './Title'
 import Skills from './Skills'
+import SelfDoodle from "../Shared/Doodle";
 
 import './style.scss';
 
@@ -15,7 +16,8 @@ const Home = () => {
   return (
     <div className="page">
       <div className="root-container">
-        <Header />
+        <Title />
+        <SelfDoodle />
         <About />
         <Skills theme={themeType}/>
       </div>
