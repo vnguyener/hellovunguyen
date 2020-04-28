@@ -20,7 +20,7 @@ import BlogPage from "./Blog";
 // shared
 import LightSwitch from '../components/LightSwitch';
 import Footer from "./Shared/Footer";
-
+import Header from "./Shared/Header";
 // function usePageViews() {
 //   let location = useLocation();
 //   useEffect(() => {
@@ -65,6 +65,7 @@ const App = () => {
         <CssBaseline />
         <LightSwitch onSwitch={getTheme}/>
         <Router>
+          {/* <Header /> */}
           <Switch>
             <Route exact path="/">
               <HomePage />
