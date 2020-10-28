@@ -3,7 +3,7 @@ import React from 'react';
 import './style.scss';
 import PropTypes from "prop-types";
 
-const TypeWriter = ({ title } : { title: string }) => {
+const TypeWriter = ({ title }) => {
   return (
     <span className="typewriter">
       {title}

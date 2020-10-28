@@ -5,8 +5,8 @@ import './style.scss';
 
 const SharedFooter = () => {
   const theme = useTheme();
-  console.log('theme', theme)
   const themeType = theme.palette.type;
+
   return (
     <div className="md-padding find-me layout-row layout-align-center-center">
       <div className={`layout-column icon-link`}>

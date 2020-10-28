@@ -1,7 +1,6 @@
 
 // @flow
 import React, { useEffect, useState } from "react";
-// import ReactDOM from "react-dom";
 import { CssBaseline, createMuiTheme } from "@material-ui/core";
 import { ThemeProvider } from "@material-ui/styles";
 
@@ -20,13 +19,7 @@ import BlogPage from "./Blog";
 // shared
 import LightSwitch from '../components/LightSwitch';
 import Footer from "./Shared/Footer";
-import Header from "./Shared/Header";
-// function usePageViews() {
-//   let location = useLocation();
-//   useEffect(() => {
-//     // ga.send(["pageview", location.pathname]);
-//   });
-// };
+
 const darkTheme = createMuiTheme({
   palette: {
     type: "dark",
@@ -60,27 +53,25 @@ const App = () => {
   }, []);
 
   return (
-    <>
-      <ThemeProvider theme={isLightOff ? darkTheme : lightTheme}>
-        <CssBaseline />
-        <LightSwitch onSwitch={getTheme}/>
-        <Router>
-          {/* <Header /> */}
-          <Switch>
-            <Route exact path="/">
-              <HomePage />
-            </Route>
-            <Route path="/work/:things?">
-              <WorkPage />
-            </Route>
-            <Route path="/blog/:articles?">
-              <BlogPage />
-            </Route>
-          </Switch>
-        </Router>
-        <Footer />
-      </ThemeProvider>
-    </>
+    <ThemeProvider theme={isLightOff ? darkTheme : lightTheme}>
+      <CssBaseline />
+      <LightSwitch onSwitch={getTheme}/>
+      <Router>
+        {/* <Header /> */}
+        <Switch>
+          <Route exact path="/">
+            <HomePage />
+          </Route>
+          <Route path="/work/:things?">
+            <WorkPage />
+          </Route>
+          <Route path="/blog/:articles?">
+            <BlogPage />
+          </Route>
+        </Switch>
+      </Router>
+      <Footer />
+    </ThemeProvider>
   );
 };
 

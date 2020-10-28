@@ -30,22 +30,20 @@ const LightSwitch = ({ onSwitch }) => {
   };
 
   return (
-    <>
-      <div className="lightswitch-container">
-        <StyledSwitch
-          checkedIcon={<span className="MuiSwitch-thumb"><i className="material-icons" style={{
-            color: "#FFF",
-            fontSize: "12px",
-            position: "relative",
-            top: "-12px",
-          }}>brightness_3</i></span>}
-          checked={isLightOff}
-          onChange={handleLightSwitch}
-          color="primary"
-          inputProps={{ 'aria-label': 'dark light mode switch'}}
-        />
-      </div>
-    </>
+    <div className="lightswitch-container">
+      <StyledSwitch
+        checkedIcon={<span className="MuiSwitch-thumb"><i className="material-icons" style={{
+          color: "#FFF",
+          fontSize: "12px",
+          position: "relative",
+          top: "-12px",
+        }}>brightness_3</i></span>}
+        checked={isLightOff}
+        onChange={handleLightSwitch}
+        color="primary"
+        inputProps={{ 'aria-label': 'dark light mode switch'}}
+      />
+    </div>
   )
 };
 

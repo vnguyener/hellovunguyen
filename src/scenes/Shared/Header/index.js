@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from "react-dom";
 import {
   useLocation,
   useHistory
@@ -12,7 +11,6 @@ const SharedHeader = () => {
   const history = useHistory();
 
   const pathname = location.pathname;
-  console.log('location', location)
 
   return (
     <section className="shared-header-container">
