@@ -65,6 +65,8 @@ const Skills = () => {
           <li>Stylus</li>
           <li>CSS</li>
           <li>&nbsp;</li>
+        </ul>
+        <ul>
           <li><mark className={highlightClass}>AWS</mark></li>
         </ul>
       </div>
