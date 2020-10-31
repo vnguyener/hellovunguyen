@@ -1,4 +1,5 @@
 $font-color: #000;
+$dark-font-color: #FFF;
 $background-color: #FFF;
 
 body, html {
@@ -73,12 +74,34 @@ body {
 
 a {
   text-decoration: none;
-
+  color: $font-color;
   &:hover {
-    color: inherit;
+    color: $font-color;
   }
 
   &:visited {
-    color: inherit;
+    color: $font-color;
+  }
+
+  &:active {
+    color: $font-color;
+  }
+}
+
+.dark {
+  a {
+    text-decoration: none;
+    color: $dark-font-color;
+    &:hover {
+      color: $dark-font-color;
+    }
+  
+    &:visited {
+      color: $dark-font-color;
+    }
+  
+    &:active {
+      color: $dark-font-color;
+    }
   }
 }

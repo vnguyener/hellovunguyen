@@ -14,7 +14,7 @@ const Home = () => {
   const themeType = theme.palette.type;
 
   return (
-    <div className="page">
+    <div className={`page ${themeType}`}>
       <div className="root-container">
         <Title />
         <SelfDoodle />
