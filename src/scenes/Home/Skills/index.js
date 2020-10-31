@@ -33,7 +33,7 @@ const Skills = () => {
         <ul>
           <li><mark className={highlightClass}>Webpack</mark></li>
           <li>Gulp</li>
-          <li>Jenkins</li>
+          <li><mark className={`${highlightClass}`}>Jenkins</mark></li>
           <li><mark className={`${highlightClass} fade`}>ESLint</mark></li>
           <li><mark className={`${highlightClass}`}>Flow</mark></li>
           <li>Typescript</li>
@@ -57,13 +57,15 @@ const Skills = () => {
           <li>Nuget</li>
         </ul>
         <ul>
-          <li>C#</li>
+          <li><mark className={highlightClass}>C#</mark></li>
           <li>Python</li>
           <li>HTML 5</li>
           <li><mark className={highlightClass}>Sass</mark></li>
           <li>Less</li>
           <li>Stylus</li>
           <li>CSS</li>
+          <li>&nbsp;</li>
+          <li><mark className={highlightClass}>AWS</mark></li>
         </ul>
       </div>
     </div>
