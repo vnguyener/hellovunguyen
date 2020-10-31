@@ -55,7 +55,7 @@ const App = () => {
   return (
     <ThemeProvider theme={isLightOff ? darkTheme : lightTheme}>
       <CssBaseline />
-      <LightSwitch onSwitch={getTheme}/>
+      <LightSwitch onSwitch={getTheme} />
       <Router>
         {/* <Header /> */}
         <Switch>

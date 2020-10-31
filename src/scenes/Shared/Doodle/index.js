@@ -34,7 +34,7 @@ const SelfDoodle = () => {
     <div
       className={`self-doodle-container ${matchesSmall ? 'vertical' : ''}`}
     >
-      {themeType == "dark" && <div className="trapezoid" />}
+      {themeType === "dark" && <div className="trapezoid" />}
       <div className={`self-doodle ${themeType} ${selfDoodleType}`}  />
     </div>
   );
